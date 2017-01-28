@@ -1,8 +1,9 @@
 require 'rails_helper'
-require 'support/shared_examples_for_a_user'
+require 'support/shared_examples_for_user'
 
 RSpec.describe Customer, type: :model do
 
-  it_behaves_like 'a user'
+  # see support/shared_examples_for_user
+  include_examples 'user'
 
 end

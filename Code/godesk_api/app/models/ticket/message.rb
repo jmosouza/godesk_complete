@@ -15,5 +15,15 @@
 #
 
 class Ticket::Message < ApplicationRecord
+
+  ## :nodoc:
+  # Ticket::Message belongs to a Ticket and to an Author.
+  # The author can be any type of User.
   belongs_to :ticket
+  belongs_to :author, class_name: User
+
+  ## :nodoc:
+  # The text body is mandatory.
+  validates :body, presence: true
+
 end

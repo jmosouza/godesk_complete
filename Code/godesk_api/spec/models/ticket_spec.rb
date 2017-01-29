@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: tickets
+#
+#  id         :integer          not null, primary key
+#  title      :string(255)      not null
+#  closed_at  :datetime
+#  author_id  :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe Ticket, type: :model do

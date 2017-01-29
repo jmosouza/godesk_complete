@@ -1,6 +1,19 @@
-##
+# == Description
+#
 # Model for a support ticket.
 # It has an author, a title and the time it was closed.
+#
+# == Schema Information
+#
+# Table name: tickets
+#
+#  id         :integer          not null, primary key
+#  title      :string(255)      not null
+#  closed_at  :datetime
+#  author_id  :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+
 class Ticket < ApplicationRecord
 
   ## :nodoc:

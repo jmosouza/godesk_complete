@@ -52,6 +52,15 @@
   </div>
 
   
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#class-Ticket::Message-label-Description">Description</a>
+    <li><a href="#class-Ticket::Message-label-Schema+Information">Schema Information</a>
+  </ul>
+</div>
+
 
   <div id="class-metadata">
     
@@ -76,6 +85,21 @@
 
   <section class="description">
     
+<h2 id="class-Ticket::Message-label-Description">Description<span><a href="#class-Ticket::Message-label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Model for the messages inside a <a href="../Ticket.html">Ticket</a>.</p>
+
+<h2 id="class-Ticket::Message-label-Schema+Information">Schema Information<span><a href="#class-Ticket::Message-label-Schema+Information">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Table name: ticket_messages</p>
+
+<pre>id         :integer          not null, primary key
+body       :string(255)
+author_id  :integer
+ticket_id  :integer
+created_at :datetime         not null
+updated_at :datetime         not null</pre>
+
   </section>
 
   

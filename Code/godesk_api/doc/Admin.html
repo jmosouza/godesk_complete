@@ -52,6 +52,15 @@
   </div>
 
   
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#class-Admin-label-Description">Description</a>
+    <li><a href="#class-Admin-label-Schema+Information">Schema Information</a>
+  </ul>
+</div>
+
 
   <div id="class-metadata">
     
@@ -76,7 +85,20 @@
 
   <section class="description">
     
+<h2 id="class-Admin-label-Description">Description<span><a href="#class-Admin-label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
 <p>Subclass of <a href="User.html">User</a>.</p>
+
+<h2 id="class-Admin-label-Schema+Information">Schema Information<span><a href="#class-Admin-label-Schema+Information">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Table name: users</p>
+
+<pre>id              :integer          not null, primary key
+username        :string(255)      not null
+password_digest :string(255)      not null
+type            :string(255)      not null
+created_at      :datetime         not null
+updated_at      :datetime         not null</pre>
 
   </section>
 

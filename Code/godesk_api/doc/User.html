@@ -52,6 +52,15 @@
   </div>
 
   
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#class-User-label-Description">Description</a>
+    <li><a href="#class-User-label-Schema+Information">Schema Information</a>
+  </ul>
+</div>
+
 
   <div id="class-metadata">
     
@@ -76,11 +85,24 @@
 
   <section class="description">
     
+<h2 id="class-User-label-Description">Description<span><a href="#class-User-label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
 <p>Base model for all types of users. It has a username and authenticates with
 a password.</p>
 
 <p>This class should not be instantiated directly. Instead, one of its
 subclasses should be used.</p>
+
+<h2 id="class-User-label-Schema+Information">Schema Information<span><a href="#class-User-label-Schema+Information">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Table name: users</p>
+
+<pre>id              :integer          not null, primary key
+username        :string(255)      not null
+password_digest :string(255)      not null
+type            :string(255)      not null
+created_at      :datetime         not null
+updated_at      :datetime         not null</pre>
 
   </section>
 
